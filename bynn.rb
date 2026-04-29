@@ -5,21 +5,21 @@
 class Bynn < Formula
   desc "Command-line interface for the BYNN Intelligence API"
   homepage "https://bynn.com"
-  version "0.2.0"
+  version "0.3.0"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Bynn-Intelligence/bynn-cli/releases/download/v0.2.0/bynn_0.2.0_darwin_amd64.tar.gz"
-      sha256 "bf3d74bec006007ea1c285666e70e5d1eedf2f24125e658662b502a6decf0ae9"
+      url "https://github.com/Bynn-Intelligence/bynn-cli/releases/download/v0.3.0/bynn_0.3.0_darwin_amd64.tar.gz"
+      sha256 "4cce2d4f6cb4eb01c1445666062f84e27304ce7ec2e3de47030ee53179f433aa"
 
       define_method(:install) do
         bin.install "bynn"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Bynn-Intelligence/bynn-cli/releases/download/v0.2.0/bynn_0.2.0_darwin_arm64.tar.gz"
-      sha256 "0abd7c6a2fc202e73b0060d7c5b34f36bfcae705279fa7fd9c025d49f7f7ee7b"
+      url "https://github.com/Bynn-Intelligence/bynn-cli/releases/download/v0.3.0/bynn_0.3.0_darwin_arm64.tar.gz"
+      sha256 "530a85074c6cfe988a2b1edb07c51adbdce88350adbd8af39ee8687f0f930ef6"
 
       define_method(:install) do
         bin.install "bynn"
@@ -29,15 +29,15 @@ class Bynn < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Bynn-Intelligence/bynn-cli/releases/download/v0.2.0/bynn_0.2.0_linux_amd64.tar.gz"
-      sha256 "0e7643849cf8b76d51389d55150e496270c34fb3e6dc9c7e14cd0ba42f3dd5ec"
+      url "https://github.com/Bynn-Intelligence/bynn-cli/releases/download/v0.3.0/bynn_0.3.0_linux_amd64.tar.gz"
+      sha256 "030383a7869d529d79e3f76400275d347541430d574842ef7ef5aca292c77026"
       define_method(:install) do
         bin.install "bynn"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Bynn-Intelligence/bynn-cli/releases/download/v0.2.0/bynn_0.2.0_linux_arm64.tar.gz"
-      sha256 "4a564a4fe836cc363bfacc9194dec86d933f5035f4590ec32955855b353f6fd5"
+      url "https://github.com/Bynn-Intelligence/bynn-cli/releases/download/v0.3.0/bynn_0.3.0_linux_arm64.tar.gz"
+      sha256 "12ad6eaa89734e1eb234512394fe6f6b6a128872ee02ff7bec7a45edf4b4d975"
       define_method(:install) do
         bin.install "bynn"
       end
